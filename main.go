@@ -10,6 +10,7 @@ func HelloWorld(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", HelloWorld)
-	http.ListenAndServe("0.0.0.0:80", nil)
+    fmt.Println("Hello world!")
+	// http.HandleFunc("/", HelloWorld)
+	// http.ListenAndServe("0.0.0.0:80", nil)
 }
