@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'go run main.go'
+                sh 'go version'
+                sh 'XDG_CACHE_HOME=/tmp/.cache go run main.go'
             }
         }
     }
